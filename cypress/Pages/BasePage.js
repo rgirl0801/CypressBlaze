@@ -7,9 +7,14 @@ class BasePage {
     goToHome() {
         this.elements.homeLink().click({ force: true });
     }
-    shouldHomePageUrl(){
+    shouldHomePageUrl() {
         cy.wait(300)
-        .url().should('include', 'index.html')
+            .url().should('include', 'index.html')
+    }
+    acceptAlert() {
+        cy.on('window:alert', (t) => {
+            expect(t)
+        }) 
     }
 }
 export default BasePage;

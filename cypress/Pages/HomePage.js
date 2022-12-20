@@ -8,4 +8,5 @@ class HomePage {
         this.elements.nokiaLumia().click({ force: true })
     }
 }
+
 export default HomePage;
