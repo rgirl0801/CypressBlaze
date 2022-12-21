@@ -10,8 +10,7 @@ const productPage = new ProductPage()
 
 describe('Cart test', () => {
     beforeEach(() => {
-        cy.visit('https://www.demoblaze.com/index.html')
-        cy.viewport(1980, 1200)
+        cy.visit('/')
         // cy.fixture('puechaseData').then(data => {
         //     this.data = data;
         // });

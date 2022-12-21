@@ -6,8 +6,7 @@ const basePage = new BasePage()
 
 describe('Actions main page', () =>{
     beforeEach(() => {
-        cy.viewport(1920, 1280)
-        cy.visit('https://www.demoblaze.com/index.html')
+        cy.visit('/')
     })
 
     it('Add product and back to Home', () => {

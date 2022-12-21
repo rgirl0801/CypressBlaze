@@ -13,9 +13,7 @@ describe('Login and sign-up tests', () => {
     // let lastName = faker.name.lastName()
 
     beforeEach(() => {
-        cy.visit('https://www.demoblaze.com/index.html')
-        cy.viewport(1980, 1200)
-        cy.wait(500)
+        cy.visit('/')
         // cy.fixture('login_fixtures').then(data => {
         //     this.data = data
         // })
