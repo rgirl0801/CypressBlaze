@@ -2,9 +2,7 @@
 
 describe('Go to different pages', () => {
     beforeEach(() => {
-        cy.visit('https://www.demoblaze.com/index.html')
-        cy.viewport(1980, 1200)
-        cy.wait(500)
+        cy.visit('/')
     })
     it('Go to Home', () => {
         cy.get('.col-lg-4.col-md-6.mb-4')
@@ -19,9 +17,7 @@ describe('Go to different pages', () => {
             expect(t)
                 .to.contains('Close')
         })
-    })
-
-    
+    });
     it('Send message', () => {
         cy.wait(400)
             .get('[data-toggle="modal"]')
@@ -37,6 +33,6 @@ describe('Go to different pages', () => {
             expect(t)
                 .to.contains('Thanks for the message!!')
 
-        })
+        });
     })
 })

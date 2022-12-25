@@ -26,12 +26,14 @@ describe('Login and sign-up tests', () => {
         const valid_login = 'KateFox1'
         const valid_password = 'KateFox'
 
+        // cy.intercept('GET', 'https://www.demoblaze.com/index.html').as('load')
+        // cy.wait('load')    
         cy.get(login_btn).click()
-        cy.wait(500)
+        cy.wait(5)
             .get(login_input)
             .type(valid_login)
             .should('have.value', valid_login)
-        cy.wait(500)
+        cy.wait(5)
             .get(password_input)
             .type(valid_password)
             .should('have.value', valid_password)

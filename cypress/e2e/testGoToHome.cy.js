@@ -6,11 +6,11 @@ const basePage = new BasePage()
 
 describe('Actions main page', () =>{
     beforeEach(() => {
-        cy.visit('/')
+        cy.visit('/prod.html?idp_=1')
     })
 
     it('Add product and back to Home', () => {
-            homePage.clickOnNokia()
+            // homePage.clickOnNokia()
             basePage.goToHome()
             basePage.shouldHomePageUrl()
     })

@@ -15,7 +15,7 @@ describe('About Us', () => {
         cy.fixture('signInPage').then(signIn => {
             this.signIn = signIn;
         });
-        cy.visit('https://www.demoblaze.com/index.html')
+        cy.visit('/')
     })
 
     it('Login successfull', function () {
